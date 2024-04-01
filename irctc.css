@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Prompt", sans-serif;
+}
+.drop{
+    display: flex;
+    gap: 30px;
+}
+.drop a{
+    display: inline-block;
+}
+.drop li{
+   margin: 10px; 
+}
+.drop-content{
+    width: 200px;
+    display: none;
+    position: relative;
+    top: 100px;
+    right: 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgb(198, 198, 198);
+    background-color: whitesmoke;
+}
+.drop-content li{
+    color: black;
+    /* padding: 10px 15px; */
+    display: block;
+}
+.drop-content li:hover{
+    text-decoration: underline;
+}
+.drop:hover .drop-content{
+    display: block;  
+    position: absolute;
+    left: 380px;
+    top:50px;
+}
+.nav-main {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-bar-primary,
+.nav-bar-secondary {
+    height: 50px;
+    width: 100%;
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(224, 221, 221, 0.327);
+    backdrop-filter: blur(3px);
+}
+
+.nav-bar-primary a,
+.nav-bar-secondary a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-bar-primary button {
+    border: none;
+    height: 35px;
+    width: 80px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: rgb(33, 33, 255);
+    color: white;
+    outline: 1.5px white solid;
+    outline-offset: -3px;
+}
+
+.nav-bar-secondary button {
+    border: none;
+    height: 35px;
+    width: 180px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: rgb(33, 33, 255);
+    color: white;
+    outline: 1.5px white solid;
+    outline-offset: -3px;
+}
+
+.nav-bar-primary button:hover,
+.nav-bar-secondary button:hover {
+    background-color: rgb(12, 12, 192);
+    outline: 2px rgb(12, 12, 192) solid;
+    outline-offset: 2px;
+    transition: all .2s ease-in-out;
+}
+
+.nav-bar-secondary {
+    height: 50px;
+    width: 100%;
+    /* background-color: lightblue; */
+}
+
+.nav-bar-primary a:nth-child(5) {
+    color: red;
+}
+
+.nav-bar-secondary a:nth-child(3) {
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-bar-primary a:hover,
+.nav-bar-secondary a:hover {
+    background-color: gray;
+    padding: 8px 0px;
+    transition: all 0.1s ease;
+    font-weight: 500;
+}
+
+.logo-right {
+    width: 100px;
+    position: absolute;
+    top: -3px;
+    left: 50px;
+    filter: contrast(200%);
+}
+
+.logo-left {
+    filter: contrast(200%);
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.booking {
+    height: 500px;
+    width: 550px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: rgba(224, 221, 221, 0.327);
+    backdrop-filter: blur(3px);
+    .btn-btn{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 5px;
+        
+    }
+
+    button {
+        width: 45%;
+        height: 40px;
+        border: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        background-color: rgb(33, 33, 255);
+        color: white;
+        outline: 1.5px white solid;
+        outline-offset: -3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    button:hover{
+        background-color: rgb(12, 12, 192);
+        outline: 2px rgb(12, 12, 192) solid;
+        outline-offset: 2px;
+        transition: all .2s ease-in-out;
+    }
+    .book-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        img{
+            width: 25%;
+            /* filter:contrast(200%); */
+           
+
+        }
+    }
+}
